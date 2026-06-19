@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gilang - Resume</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: #1f2937;
+            line-height: 1.6;
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+            background: #f3f4f6;
+        }
+        .resume {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+            padding: 40px 50px;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 4px;
+        }
+        .header .title {
+            font-size: 1.3rem;
+            font-weight: 500;
+            opacity: 0.9;
+            margin-bottom: 12px;
+        }
+        .header .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-size: 0.9rem;
+        }
+        .header .contact a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .header .contact a:hover { text-decoration: underline; }
+        .body { padding: 40px 50px; }
+        .section { margin-bottom: 28px; }
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #2563eb;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 14px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        .section p { font-size: 0.95rem; color: #4b5563; }
+        .exp-item { margin-bottom: 20px; }
+        .exp-item:last-child { margin-bottom: 0; }
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 4px;
+        }
+        .exp-header h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #111827;
+        }
+        .exp-header .date {
+            font-size: 0.85rem;
+            color: #6b7280;
+            font-weight: 500;
+        }
+        .exp-company {
+            font-size: 0.95rem;
+            color: #2563eb;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .exp-item ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .exp-item ul li {
+            font-size: 0.9rem;
+            color: #4b5563;
+            padding-left: 16px;
+            position: relative;
+            margin-bottom: 3px;
+        }
+        .exp-item ul li::before {
+            content: '\25B8';
+            position: absolute;
+            left: 0;
+            color: #2563eb;
+        }
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .skills-grid span {
+            background: #eff6ff;
+            color: #2563eb;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid #bfdbfe;
+        }
+        .proj-item { margin-bottom: 16px; }
+        .proj-item:last-child { margin-bottom: 0; }
+        .proj-item h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 2px;
+        }
+        .proj-item p {
+            font-size: 0.9rem;
+            color: #4b5563;
+        }
+        .proj-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 4px;
+        }
+        .proj-tech span {
+            background: #f3f4f6;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            color: #374151;
+        }
+        .edu-item { margin-bottom: 8px; }
+        .edu-item h3 { font-size: 1rem; font-weight: 600; color: #111827; }
+        .edu-item p { font-size: 0.9rem; color: #4b5563; }
+        @media print {
+            body { padding: 0; background: white; }
+            .resume { box-shadow: none; border-radius: 0; }
+            .header { break-inside: avoid; }
+        }
+        @media (max-width: 600px) {
+            body { padding: 16px; }
+            .header { padding: 24px; }
+            .body { padding: 24px; }
+            .header h1 { font-size: 1.8rem; }
+            .exp-header { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <div class="header">
+            <h1>Gilang</h1>
+            <div class="title">System Engineer & Cloud Engineer</div>
+            <div class="contact">
+                <a href="mailto:gilaaang14@gmail.com">&#9993; gilaaang14@gmail.com</a>
+                <a href="https://github.com/gilaaang14" target="_blank">&#128279; github.com/gilaaang14</a>
+                <a href="https://linkedin.com/in/gilang" target="_blank">&#128279; linkedin.com/in/gilang</a>
+            </div>
+        </div>
+        <div class="body">
+            <div class="section">
+                <div class="section-title">Professional Summary</div>
+                <p>System Engineer/Cloud Engineer with 4 years of experience in designing topology virtualization architecture for data centers/offices, installation, configuration, and monitoring of hypervisors (KVM), Docker, Kubernetes, Ceph storage clusters, SAN/NAS storage, Active Directory, network (Cisco, Proxy), CI/CD (GitLab, Jenkins, ArgoCD). Experienced in managing multi-region production environments across on-premise and multi-cloud providers.</p>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Work Experience</div>
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <h3>DevOps Sysadmin Lead</h3>
+                        <span class="date">June 2023 - Present</span>
+                    </div>
+                    <div class="exp-company">DataON</div>
+                    <ul>
+                        <li>Manage teams to foster better experience of current DevOps technologies</li>
+                        <li>Created flow auto patches/deployment for SaaS and on-premise client environments</li>
+                        <li>Created flow auto deployment for multi-region with same tag using Jenkins and ArgoCD image streams</li>
+                        <li>Created flow auto deployment for Docker microservices with Ansible</li>
+                        <li>Migration production cluster from OKD old version to Kubeadm latest version</li>
+                        <li>Created and manages multi log services using ELK, Loki, Grafana</li>
+                        <li>Manage multi environment and region production area at on-premise and multi-cloud provider</li>
+                    </ul>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <h3>System Engineer Lead</h3>
+                        <span class="date">Aug 2022 - June 2023</span>
+                    </div>
+                    <div class="exp-company">PT DesktopIP Teknologi Indonesia</div>
+                    <ul>
+                        <li>Plans, design, implement and maintenance product for cloud service in data center Jakarta and Singapore</li>
+                        <li>Plans, design, implement and maintenance virtualization cluster and storage cluster</li>
+                        <li>Plans, design, implement, maintenance and monitoring CI/CD with Jenkins, Gitops, ArgoCD to Kubernetes Cluster</li>
+                        <li>Plans, design, implement, maintenance and monitoring network device in data center</li>
+                    </ul>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <h3>System Engineer</h3>
+                        <span class="date">Aug 2019 - July 2022</span>
+                    </div>
+                    <div class="exp-company">PT DesktopIP Teknologi Indonesia</div>
+                    <ul>
+                        <li>Setup Infrastructure and architecture server, network on data center</li>
+                        <li>Configuration RAID and iDRAC server Dell Blade, R740, R730, R620, C6320</li>
+                        <li>Install and configure Virtualization server (KVM, Proxmox, Virtualizor, Openstack)</li>
+                        <li>Install and configure Storage Server (NFS, SAN, NAS) and Ceph Storage Cluster</li>
+                        <li>Configure container infrastructure (LXC, Docker) and network cluster using OVS VXLAN</li>
+                        <li>Setup monitoring server (Zabbix, Grafana, Prometheus), load balancing (Nginx, HAProxy)</li>
+                        <li>Setup database master-slave (MongoDB, MySQL) and Redis cluster</li>
+                        <li>Setup production deployment using Ansible-playbook and Git CI/CD</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Key Projects</div>
+                <div class="proj-item">
+                    <h3>Multi-Region Auto Deployment</h3>
+                    <p>Created automated deployment flow for multi-region with identical tags using Jenkins pipelines and ArgoCD image streams.</p>
+                    <div class="proj-tech"><span>Jenkins</span><span>ArgoCD</span><span>Kubernetes</span></div>
+                </div>
+                <div class="proj-item">
+                    <h3>Ceph Storage Cluster Implementation</h3>
+                    <p>Designed and implemented Ceph storage clusters for data centers with S3-compatible object storage (RGW).</p>
+                    <div class="proj-tech"><span>Ceph</span><span>Linux</span><span>S3</span></div>
+                </div>
+                <div class="proj-item">
+                    <h3>Cloud Infrastructure Jakarta &amp; Singapore</h3>
+                    <p>Planned, designed, and maintained cloud service infrastructure across data centers in Jakarta and Singapore.</p>
+                    <div class="proj-tech"><span>KVM</span><span>Proxmox</span><span>GCP</span></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Technical Skills</div>
+                <div class="skills-grid">
+                    <span>Docker</span><span>Kubernetes</span><span>Jenkins</span><span>Ansible</span>
+                    <span>ArgoCD</span><span>Terraform</span><span>KVM</span><span>Proxmox</span>
+                    <span>Ceph</span><span>AWS</span><span>GCP</span><span>Digital Ocean</span>
+                    <span>Linux</span><span>Windows Server</span><span>Zabbix</span><span>Grafana</span>
+                    <span>Prometheus</span><span>ELK Stack</span><span>Nginx</span><span>HAProxy</span>
+                    <span>Cisco</span><span>Mikrotik</span><span>MySQL</span><span>MongoDB</span>
+                    <span>Redis</span><span>Gitlab CI</span><span>Bash Script</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Education</div>
+                <div class="edu-item">
+                    <h3>Universitas Nasional</h3>
+                    <p>2015 - 2019</p>
+                </div>
+                <div class="edu-item">
+                    <h3>SMK Poernama Mandiri</h3>
+                    <p>2012 - 2015</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

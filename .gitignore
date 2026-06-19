@@ -1,0 +1,5 @@
+node_modules/
+.vite/
+Gemini_Generated_Image_*
+
+repo-github.txt

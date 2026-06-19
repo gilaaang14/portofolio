@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Gilang - System Engineer & Cloud Engineer specializing in virtualization, Kubernetes, CI/CD, and cloud infrastructure.">
+    <meta name="keywords" content="System Engineer, Cloud Engineer, DevOps, Kubernetes, Docker, CI/CD, Gilang, Indonesia">
+    <meta name="author" content="Gilang">
+    <meta property="og:title" content="Gilang | System Engineer & Cloud Engineer">
+    <meta property="og:description" content="Building and maintaining scalable infrastructure solutions">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gilaaang14.github.io/portofolio/">
+    <meta property="og:image" content="https://gilaaang14.github.io/portofolio/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Gilang | System Engineer & Cloud Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9729;</text></svg>">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">&lt;Gilang /&gt;</div>
+            <button class="mobile-menu-btn" id="mobile-menu" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1>Gilang</h1>
+                    <h2>System Engineer & Cloud Engineer</h2>
+                    <p class="hero-desc">Building and maintaining scalable infrastructure solutions</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="cta-button">Get In Touch</a>
+                        <a href="#projects" class="cta-button cta-secondary">View Projects</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/gilaaang14" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/gilang" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:gilaaang14@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="avatar-wrapper">
+                        <div class="avatar">
+                            <img alt="Gilang" class="avatar-img" id="hero-foto">
+                        </div>
+                        <div class="tech-icons">
+                            <i class="fab fa-docker" style="top: 10%; left: -20px; animation-delay: 0s;"></i>
+                            <i class="fab fa-aws" style="top: 40%; right: -25px; animation-delay: 0.5s;"></i>
+                            <i class="fas fa-ship" style="bottom: 20%; left: -15px; animation-delay: 1s;"></i>
+                            <i class="fab fa-linux" style="bottom: 5%; right: -15px; animation-delay: 1.5s;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="about-avatar">
+                        <img alt="Gilang" class="about-img" id="about-foto">
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <p>I am a passionate <strong>System Engineer & Cloud Engineer</strong> with 4+ years of experience in designing, implementing, and maintaining virtualization, cloud, and container infrastructure. My expertise lies in <strong>hypervisor virtualization (KVM, Proxmox)</strong>, <strong>container orchestration (Kubernetes, Docker)</strong>, and <strong>CI/CD automation</strong>.</p>
+                    <p>I specialize in bridging infrastructure and development to deliver scalable, reliable, and automated solutions across data centers in Jakarta and Singapore. From storage clusters (Ceph) to monitoring stacks (Zabbix, Prometheus, Grafana), I ensure every component runs optimally.</p>
+                    <p>When I'm not automating infrastructure, you'll find me exploring new cloud technologies, optimizing CI/CD pipelines, or sharing knowledge with the DevOps community.</p>
+                    <a href="./resume.html" class="cta-button resume-btn" target="_blank"><i class="fas fa-download"></i> View Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up">
+                    <span class="stat-number" data-target="4">0</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <span class="stat-number" data-target="40">0</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <span class="stat-number" data-target="20">0</span>
+                    <span class="stat-label">Technologies</span>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-label">Cloud Platforms</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <h3>DevOps Sysadmin Lead</h3>
+                        <h4>DataON</h4>
+                        <p class="date">June 2023 - Present</p>
+                        <ul>
+                            <li>Manage teams to foster better experience of current DevOps technologies</li>
+                            <li>Created flow auto patches/deployment for SaaS and on-premise client environments</li>
+                            <li>Created flow auto deployment for multi-region with same tag using Jenkins and ArgoCD image streams</li>
+                            <li>Created flow auto deployment for Docker microservices with Ansible</li>
+                            <li>Migration production cluster from OKD old version to Kubeadm latest version</li>
+                            <li>Created and manages multi log services using ELK, Loki, Grafana</li>
+                            <li>Manage multi environment and region production area at on-premise and multi-cloud provider</li>
+                            <li>Created and manage flow DRC (Disaster Recovery Center)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <h3>System Engineer Lead</h3>
+                        <h4>PT DesktopIP Teknologi Indonesia</h4>
+                        <p class="date">Aug 2022 - June 2023</p>
+                        <ul>
+                            <li>Plans, design, implement and maintenance product for cloud service in data center Jakarta and Singapore</li>
+                            <li>Plans, design, implement and maintenance virtualization cluster and storage cluster in data center Jakarta and Singapore</li>
+                            <li>Plans, design, implement, maintenance and monitoring CI/CD with Jenkins, Gitops, ArgoCD to Kubernetes Cluster</li>
+                            <li>Plans, design, implement, maintenance and monitoring network device in data center Jakarta and Singapore</li>
+                            <li>Plans, design, implement, maintenance and monitoring Servers and VPS in data center Jakarta and Singapore</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <h3>System Engineer</h3>
+                        <h4>PT DesktopIP Teknologi Indonesia</h4>
+                        <p class="date">Aug 2019 - July 2022</p>
+                        <ul>
+                            <li>Setup infrastructure and architecture server, network on data center</li>
+                            <li>Configuration RAID and iDRAC server Dell Blade, R740, R730, R620, C6320</li>
+                            <li>Install and configure Virtualization server (KVM, Proxmox, Virtualizor, Openstack)</li>
+                            <li>Install and configure Storage Server (NFS, SAN, NAS) and Ceph Storage Cluster</li>
+                            <li>Configure container infrastructure (LXC, Docker) and network cluster using OVS VXLAN</li>
+                            <li>Setup monitoring server (Zabbix, Grafana, Prometheus), load balancing (Nginx, HAProxy)</li>
+                            <li>Setup database master-slave (MongoDB, MySQL) and Redis cluster</li>
+                            <li>Setup production deployment using Ansible-playbook and Git CI/CD</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Key Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Multi-Region Auto Deployment</h3>
+                        <p>Created automated deployment flow for multi-region with identical tags using Jenkins pipelines and ArgoCD image streams, ensuring consistent releases across environments</p>
+                        <div class="project-tech">
+                            <span>Jenkins</span>
+                            <span>ArgoCD</span>
+                            <span>Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Ceph Storage Cluster Implementation</h3>
+                        <p>Designed and implemented Ceph storage clusters for data centers, providing S3-compatible object storage (RGW) and high-availability block storage</p>
+                        <div class="project-tech">
+                            <span>Ceph</span>
+                            <span>Linux</span>
+                            <span>S3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Cloud Infrastructure Jakarta & Singapore</h3>
+                        <p>Planned, designed, and maintained cloud service infrastructure across data centers in Jakarta and Singapore, including virtualization and storage clusters</p>
+                        <div class="project-tech">
+                            <span>KVM</span>
+                            <span>Proxmox</span>
+                            <span>GCP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <a href="https://www.docker.com/" class="skill-card" data-aos="fade-up" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-docker"></i>
+                    <h3>Docker</h3>
+                    <p>Container orchestration and deployment using Docker, creating efficient and scalable containerized applications.</p>
+                </a>
+                <a href="https://kubernetes.io/" class="skill-card" data-aos="fade-up" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-ship"></i>
+                    <h3>Kubernetes</h3>
+                    <p>Managing containerized applications at scale with automated deployment, scaling, and operations.</p>
+                </a>
+                <a href="https://www.jenkins.io/" class="skill-card" data-aos="fade-up" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-jenkins"></i>
+                    <h3>Jenkins</h3>
+                    <p>Implementing CI/CD pipelines and automating build, test, and deployment processes.</p>
+                </a>
+                <a href="https://www.ansible.com/" class="skill-card" data-aos="fade-up" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Ansible</h3>
+                    <p>Infrastructure automation and configuration management using playbooks and roles.</p>
+                </a>
+                <a href="https://argo-cd.readthedocs.io/" class="skill-card" data-aos="fade-up" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>ArgoCD</h3>
+                    <p>Declarative GitOps continuous delivery tool for Kubernetes deployments.</p>
+                </a>
+                <a href="https://www.terraform.io/" class="skill-card" data-aos="fade-up" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Terraform</h3>
+                    <p>Infrastructure as Code for provisioning cloud resources across multiple providers.</p>
+                </a>
+                <a href="https://www.zabbix.com/" class="skill-card" data-aos="fade-up" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Zabbix</h3>
+                    <p>Enterprise-level monitoring solution for networks, servers, and cloud services.</p>
+                </a>
+                <a href="https://grafana.com/" class="skill-card" data-aos="fade-up" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Grafana</h3>
+                    <p>Creating interactive dashboards and visualizations for metrics and analytics.</p>
+                </a>
+                <a href="https://prometheus.io/" class="skill-card" data-aos="fade-up" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h3>Prometheus</h3>
+                    <p>Monitoring systems and time-series data collection for infrastructure observability.</p>
+                </a>
+                <a href="https://www.proxmox.com/" class="skill-card" data-aos="fade-up" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-server"></i>
+                    <h3>Proxmox</h3>
+                    <p>Managing virtual machines and containers in enterprise virtualization platform.</p>
+                </a>
+                <a href="https://www.linux.org/" class="skill-card" data-aos="fade-up" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linux"></i>
+                    <h3>Linux</h3>
+                    <p>System administration, shell scripting, and server management in Linux environments.</p>
+                </a>
+                <a href="https://aws.amazon.com/" class="skill-card" data-aos="fade-up" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-aws"></i>
+                    <h3>AWS Cloud</h3>
+                    <p>Deploying and managing cloud infrastructure using AWS services and best practices.</p>
+                </a>
+                <a href="https://cloud.google.com/" class="skill-card" data-aos="fade-up" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-google"></i>
+                    <h3>GCP</h3>
+                    <p>Designing and managing infrastructure on Google Cloud Platform.</p>
+                </a>
+                <a href="https://ceph.io/" class="skill-card" data-aos="fade-up" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-database"></i>
+                    <h3>Ceph</h3>
+                    <p>Distributed storage clusters providing S3, block, and file storage at scale.</p>
+                </a>
+                <a href="https://www.elastic.co/what-is/elk-stack" class="skill-card" data-aos="fade-up" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-search"></i>
+                    <h3>ELK Stack</h3>
+                    <p>Centralized logging and log analysis using Elasticsearch, Logstash, and Kibana.</p>
+                </a>
+                <a href="https://www.dell.com/" class="skill-card" data-aos="fade-up" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-server"></i>
+                    <h3>Dell Server</h3>
+                    <p>Hardware management including RAID, iDRAC configuration for Dell Blade and PowerEdge servers.</p>
+                </a>
+                <a href="https://www.cisco.com/" class="skill-card" data-aos="fade-up" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Cisco Network</h3>
+                    <p>Network configuration including routing, switching, VLAN, and firewall on Cisco devices.</p>
+                </a>
+                <a href="https://www.nginx.com/" class="skill-card" data-aos="fade-up" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-server"></i>
+                    <h3>Nginx</h3>
+                    <p>Web server configuration, reverse proxy, and performance optimization.</p>
+                </a>
+                <a href="https://mariadb.org/" class="skill-card" data-aos="fade-up" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-database"></i>
+                    <h3>MariaDB</h3>
+                    <p>Open-source database management, replication, and performance tuning.</p>
+                </a>
+                <a href="https://www.mongodb.com/" class="skill-card" data-aos="fade-up" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-leaf"></i>
+                    <h3>MongoDB</h3>
+                    <p>NoSQL database configuration, clustering, and master-slave replication.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info-column" data-aos="fade-right">
+                    <p class="contact-desc">Have a project in mind or just want to say hi? Feel free to reach out!</p>
+                    <div class="contact-items">
+                        <a href="mailto:gilaaang14@gmail.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">gilaaang14@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/gilaaang14" class="contact-item" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <span class="contact-label">GitHub</span>
+                                <span class="contact-value">github.com/gilaaang14</span>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/gilang" class="contact-item" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-value">linkedin.com/in/gilang</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" data-aos="fade-left" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="form-name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="form-email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="form-subject" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="form-message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Gilang. Built with <i class="fas fa-heart" style="color: #ef4444;"></i></p>
+                <div class="footer-links">
+                    <a href="https://github.com/gilaaang14" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gilang" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:gilaaang14@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
