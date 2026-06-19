@@ -327,7 +327,7 @@ nav a:hover {
 
 .about-avatar span {
     font-size: 4.5rem;
-    font-weight: 800;
+    font-weight: 1000;
     color: white;
 }
 
@@ -368,7 +368,7 @@ nav a:hover {
 .about-avatar {
     width: 320px;
     height: 320px;
-    border-radius: 24px;
+    border-radius: 28px;
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(37, 99, 235, 0.2);
 }
