@@ -147,6 +147,28 @@
         .edu-item { margin-bottom: 8px; }
         .edu-item h3 { font-size: 1rem; font-weight: 600; color: #111827; }
         .edu-item p { font-size: 0.9rem; color: #4b5563; }
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 15px rgba(37,99,235,0.3);
+            transition: transform 0.2s;
+        }
+        .print-btn:hover { transform: translateY(-2px); }
+        @media print { .print-btn { display: none; } }
         @media print {
             body { padding: 0; background: white; }
             .resume { box-shadow: none; border-radius: 0; }
@@ -162,6 +184,8 @@
     </style>
 </head>
 <body>
+    <button class="print-btn" onclick="window.print()"><i class="fas fa-download"></i> Download PDF</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <div class="resume">
         <div class="header">
             <h1>Mohamad Gilang Hidayah</h1>
@@ -257,6 +281,7 @@
                     <span>Prometheus</span><span>ELK Stack</span><span>Nginx</span><span>HAProxy</span>
                     <span>Cisco</span><span>Mikrotik</span><span>MySQL</span><span>MongoDB</span>
                     <span>Redis</span><span>Gitlab CI</span><span>Bash Script</span>
+                    <span>Azure Cloud</span><span>Huawei Cloud</span><span>OpenShift</span><span>Kong API Gateway</span>
                 </div>
             </div>
 
