@@ -165,10 +165,26 @@
             align-items: center;
             gap: 8px;
             box-shadow: 0 4px 15px rgba(37,99,235,0.3);
-            transition: transform 0.2s;
+            transition: transform 0.2s, opacity 0.3s;
         }
         .print-btn:hover { transform: translateY(-2px); }
+        .print-btn:disabled { opacity: 0.7; cursor: wait; transform: none; }
         @media print { .print-btn { display: none; } }
+        #pdf-loading {
+            display: none;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: #1f2937;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            z-index: 100;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        @media print { #pdf-loading { display: none !important; } }
         @media print {
             body { padding: 0; background: white; }
             .resume { box-shadow: none; border-radius: 0; }
@@ -184,9 +200,35 @@
     </style>
 </head>
 <body>
-    <button class="print-btn" onclick="window.print()"><i class="fas fa-download"></i> Download PDF</button>
+    <button class="print-btn" id="downloadBtn"><i class="fas fa-download"></i> Download PDF</button>
+    <div id="pdf-loading"><i class="fas fa-spinner fa-spin"></i> Generating PDF...</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-    <div class="resume">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function() {
+            var btn = this;
+            var loading = document.getElementById('pdf-loading');
+            var resume = document.getElementById('resume');
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Generating...';
+            loading.style.display = 'block';
+
+            var opt = {
+                margin:        [0.5, 0.5, 0.5, 0.5],
+                filename:      'Mohamad_Gilang_Hidayah_Resume.pdf',
+                image:         { type: 'jpeg', quality: 0.98 },
+                html2canvas:   { scale: 2, useCORS: true, letterRendering: true },
+                jsPDF:         { unit: 'in', format: 'a4', orientation: 'portrait' }
+            };
+
+            html2pdf().set(opt).from(resume).save().then(function() {
+                btn.disabled = false;
+                btn.innerHTML = '<i class="fas fa-download"></i> Download PDF';
+                loading.style.display = 'none';
+            });
+        });
+    </script>
+    <div class="resume" id="resume">
         <div class="header">
             <h1>Mohamad Gilang Hidayah</h1>
             <div class="title">System Engineer & Cloud Engineer</div>
