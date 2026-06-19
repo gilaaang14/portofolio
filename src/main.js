@@ -157,7 +157,7 @@ if (contactForm) {
             submitBtn.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
 
             setTimeout(() => {
-                window.location.href = 'mailto:gilaaang14@gmail.com?subject=Portfolio Contact';
+                window.location.href = 'mailto:gilanghidayah@gmail.com?subject=Portfolio Contact';
             }, 1500);
         } finally {
             setTimeout(() => {
