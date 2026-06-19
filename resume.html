@@ -24,6 +24,7 @@
             background: linear-gradient(135deg, #2563eb, #7c3aed);
             color: white;
             padding: 40px 50px;
+            page-break-inside: avoid;
         }
         .header h1 {
             font-size: 2.5rem;
@@ -51,7 +52,7 @@
         }
         .header .contact a:hover { text-decoration: underline; }
         .body { padding: 40px 50px; }
-        .section { margin-bottom: 28px; }
+        .section { margin-bottom: 28px; page-break-inside: avoid; }
         .section-title {
             font-size: 1.2rem;
             font-weight: 700;
@@ -63,7 +64,7 @@
             border-bottom: 2px solid #e5e7eb;
         }
         .section p { font-size: 0.95rem; color: #4b5563; }
-        .exp-item { margin-bottom: 20px; }
+        .exp-item { margin-bottom: 20px; page-break-inside: avoid; }
         .exp-item:last-child { margin-bottom: 0; }
         .exp-header {
             display: flex;
@@ -214,11 +215,12 @@
             loading.style.display = 'block';
 
             var opt = {
-                margin:        [0.5, 0.5, 0.5, 0.5],
+                margin:        [0.4, 0.4, 0.4, 0.4],
                 filename:      'Mohamad_Gilang_Hidayah_Resume.pdf',
                 image:         { type: 'jpeg', quality: 0.98 },
                 html2canvas:   { scale: 2, useCORS: true, letterRendering: true },
-                jsPDF:         { unit: 'in', format: 'a4', orientation: 'portrait' }
+                jsPDF:         { unit: 'in', format: 'a4', orientation: 'portrait' },
+                pagebreak:     { mode: ['avoid-all', 'css', 'legacy'] }
             };
 
             html2pdf().set(opt).from(resume).save().then(function() {
